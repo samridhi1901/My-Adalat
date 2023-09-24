@@ -10,14 +10,16 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background: #381212;
+  background: #9d4b4b;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  color: black;
+  font-size: 1rem;
 }
 
 table,
@@ -26,7 +28,7 @@ table,
 }
 
 #addcase {
-  background: #F9F9F9;
+  background: #9c7777;
   padding: 25px;
   margin: 100px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -55,12 +57,17 @@ fieldset {
   width: 100%;
 }
 
+#addcase input{
+  border-radius: 5px;
+  width:max-content ;
+}
 
 #addcase button {
   cursor: pointer;
   width: 100%;
-  border: none;
-  background: #4CAF50;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  background: #cc0817;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -68,7 +75,7 @@ fieldset {
 }
 
 #addcase button:hover {
-  background: #43A047;
+  opacity: 0.8;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;

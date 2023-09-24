@@ -8,7 +8,9 @@
 
   <bod>
     <center><h2><i class="fa fa-user-plus" style="font-size:32px"></i>Registration</h2></center>
-
+    <br>
+    <br>
+   
     <%- include('./partials/messages.ejs') %>
 
     <form action="/register" method="POST">
@@ -19,32 +21,32 @@
         <input type="radio" name="personType" value="l" required> Lawyer
         <input type="radio" name="personType" value="j" required> Judge<br><br><br>
         
-        <label for="fname"><b>First Name</b></label>
+        <label for="fname"><b>First Name<span style="color: red;"> *</span></b></label>
         <input type="text" placeholder="Enter First Name" name="fname" required>
         
         <label for="mname"><b>Middle Name</b></label>
         <input type="text" placeholder="Enter Middle Name" name="mname">
       
-        <label for="lname"><b>Last Name</b></label>
+        <label for="lname"><b>Last Name<span style="color: red;"> *</span></b></label>
         <input type="text" placeholder="Enter Last Name" name="lname" required>
         
-        <label for="email"><b>e-mail</b></label>
+        <label for="email"><b>e-mail<span style="color: red;"> *</span></b></label>
         <input type="email" placeholder="Enter Email" name="email" required>
         <br>
 
-        <label for="password"><b>Password</b></label>
+        <label for="password"><b>Password<span style="color: red;"> *</span></b></label>
         <input type="password" placeholder="Enter Password" name="password" required>
         
-        <label for="password2"><b>Repeat Password</b></label>
+        <label for="password2"><b>Repeat Password<span style="color: red;"> *</span></b></label>
         <input type="password" placeholder="Repeat Password" name="password2" required>
             
-        <button type="submit" class="button">Register</button>
+        <button class="btn" type="submit" class="button">Register</button>
         
       </div>
     </form>
     <form action="/" method="GET">
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="submit" class="cancelbtn">Back</button>
+      <div  style="background-color:#5b2424">
+        <button type="submit" class="cancelbtn" style="background-color:orange;">Back</button>
       </div>
     </form>
   </body>

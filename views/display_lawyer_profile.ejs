@@ -9,55 +9,66 @@
     <body>
         <center><h2><i class="fa fa-user-plus" style="font-size:32px"> <%= fname %>'s Details</i></h2></center>
 
-        
-
+        <br>
+        <br>
         <form action="/client/add_case_pg2" method="GET">
             <div class="container">
                 <label><b>Full Name: </b></label>
                 <br>
                 <label><%= fname %> <%= mname %> <%= lname %></label>
                 <br>
+                <br>
 
                 <label><b>Company Name: </b></label>
                 <br>
                 <label><%= company_name %></label>
+                <br>
                 <br>
 
                 <label><b>Preferred Case Type(s): </b></label>
                 <br>
                 <label><%= pref_case_types %></label>
                 <br>
+                <br>
 
                 <label><b>No. of years of experience: </b></label>
                 <br>
                 <label><%= exp_yrs %></label>
+                <br>
                 <br>
 
                 <label><b>Experience: </b></label>
                 <br>
                 <label><%= experience %></label>
                 <br>
+                <br>
 
                 <label><b>Fees: </b>Rs. <%= fees %></label>
                 <br>
+                <br>
 
                 <label><b>Fee structure: </b></label>
-                <br>
                 <label><%= fee_descp %></label>
+                <br>
                 <br>
 
                 <label><b>Date Of Birth: </b><%= dob %></label>
                 <br>
+                <br>
 
                 <label><b>Age: </b><%= age %> yrs</label>
+                <br>
                 <br>
 
                 <label><b>e-mail: </b></label>
                 <br>
+                <br>
                 <label><%= email %></label>
                 <br>
+                <br>
 
-                <label><b>Phone Number: </b>(+91)(0)<%= ph_no %></label>
+                <label><b>Phone Number: </b>(+91)<%= ph_no %></label>
+                <br>
                 <br>
 
                 <!-- <button type="submit" class="button">Back</button> -->
@@ -65,7 +76,7 @@
         </form>
 
         <form action="/chat/get_chat/<%=  %>" method="GET">
-            <button type="submit">Open Chat</button>
+            <button class="btn" type="submit">Open Chat</button>
         </form>
     </body>
 </html>

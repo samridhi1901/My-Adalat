@@ -1,28 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
-input[type=text], input[type=password] ,input[type=email]{
+input[type=text], input[type=password] ,input[type=email],input[type=date],input[type=number], textarea{
   width: 100%;
-  padding: 12px 20px;
+  padding: 10px 10px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  border-radius: 10px;
   box-sizing: border-box;
+  animation: shadow 1s ease 1s 1 alternate forwards;
 }
 
-button {
-  background-color: #69292e;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+@keyframes shadow{
+  100%{
+      box-shadow: 0px 0px 20px rgb(30, 120, 150);
+  }
 }
 
-button:hover {
-  opacity: 0.8;
-}
+
+
 
 .cancelbtn {
   width: auto;
@@ -32,6 +35,10 @@ button:hover {
 
 .container {
   padding: 10px;
+  background:rgba(0,0,0,0.7) url(../images/home_page_image.jpg) ;
+  background-size: cover;
+  background-blend-mode: darken;
+  color: white;
 }
 
 span.psw {
@@ -39,6 +46,38 @@ span.psw {
   padding-top: 16px;
 }
 
+.btn{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  background-color: #c00817;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* .button{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  background-color: #c00817;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+} */
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {

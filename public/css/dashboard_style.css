@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 body{
     height: 100vh;
@@ -275,6 +275,14 @@ table#t01 {
 
 .icon-info {
     position: relative;
+}
+
+.btn-box{
+    width: 280px;
+}
+
+.navi li{
+    padding: 10px;
 }
 .navi i {
     font-size: 20px;

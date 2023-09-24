@@ -1,13 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 
-
+* {
+  margin: 5px;
+  /* padding: 10px; */
+}
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background: #381212;
+  background: rgba(0, 0, 0, 0.7) url(../images/home_page_image.jpg);
 }
 
 .container {
@@ -19,71 +22,74 @@ body {
 
 #main {
   padding: 25px;
-  background-color: #F9F9F9;
+  background-color: #1f1616;
 }
 
-h1{
+h1 {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 15px;
 }
-table{
-  width:100%;
+table {
+  width: 100%;
   table-layout: fixed;
 }
-th{
-  border: 0.1px solid #F9F9F9;
+th {
+  border: 0.1px solid #f9f9f9;
   border-bottom: none;
   background-color: #d9a379;
   padding: 20px 15px;
   text-align: left;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: bold;
+  font-size: 1rem;
   color: #4a3523;
 }
-td{
+td {
   border: 0.2px solid #d9a379;
   padding: 15px;
   text-align: left;
-  vertical-align:middle;
-  font-weight: 300;
-  font-size: 12px;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 1rem;
   color: #777;
 }
-td:first-child, th:first-child {
- border-left: none;
+td:first-child,
+th:first-child {
+  border-left: none;
 }
-th:first-child, th:last-child{
-  background-color: #F9F9F9;
+th:first-child,
+th:last-child {
+  background-color: #f9f9f9;
 }
-td:last-child, th:last-child {
- border-right: none;
+td:last-child,
+th:last-child {
+  border-right: none;
 }
-tr.lastrow
-{
-   border-bottom: none;
+tr.lastrow {
+  border-bottom: none;
 }
 
- button {
+button {
   cursor: pointer;
   width: 100%;
-  border: none;
-  background: #4CAF50;
-  color: #FFF;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  background: #cc0817;
+  color: #fff;
   margin: 30 auto 5 auto;
   padding: 10px;
   font-size: 15px;
 }
 
- button:hover {
-  background: #43A047;
+button:hover {
+  opacity: 0.8;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
-.center
-{margin: auto;
+.center {
+  margin: auto;
   width: 50%;
   padding: 10px;
 }

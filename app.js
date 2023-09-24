@@ -8,6 +8,10 @@ const passport = require('passport');
 const express = require('express');
 const app = express();
 
+app.get('/moyan',(res,req)=>{
+    res.render("add_case_pg1.js")
+})
+
 //passport config
 require('./config/passport')(passport);
 

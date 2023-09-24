@@ -17,8 +17,9 @@ body {
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
-  color: #777;
-  background: #381212;
+  color: #000000;
+  font-weight: 700;
+  background: #9d4b4b;
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  font-size: 0.9rem;
 }
 
 #addcase input[type="text"],
@@ -43,7 +45,7 @@ option{
 #addcase {
   background: #F9F9F9;
   padding: 25px;
-  margin: 100px 0;
+  margin: 20px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -79,6 +81,7 @@ select,
   padding: 10px;
   -webkit-transition: all 0.30s ease-in-out;
   outline: none; 
+  border-radius: 10px;
 }
 
 #addcase input[type="text"]:focus,
@@ -88,6 +91,7 @@ select:focus,
   -webkit-box-shadow: 0 0 8px #88D5E9;
   box-shadow: 0 0 8px #88D5E9;
   border: 1px solid #88D5E9;
+  
 }
 
 
@@ -99,17 +103,19 @@ select:focus,
 
 #addcase button {
   cursor: pointer;
-  width: 100%;
+  width: 30%;
   border: none;
-  background: #4CAF50;
+  background: #c00817;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 #addcase button:hover {
-  background: #43A047;
+  opacity: 0.8;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -139,3 +145,4 @@ select:focus,
  .required{
     color:red;
 }
+

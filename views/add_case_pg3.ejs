@@ -2,19 +2,21 @@
 <div class="container">  
   <div id="addcase">
     <h3><b>Further details</b></h3>
+    <br>
     <form action="/client/add_case_pg3" method="POST">
       <fieldset>
         <b>Hearing date</b>:<input type="date" name="h_date"> 
       </fieldset>
-      <!-- <fieldset>
-        <b>Next Hearing date</b>:<input type="date" name="n_h_date">
-      </fieldset> -->
-      <b>Court Case Number</b>: <input type="text" name="court_case_no">
+     
+      <b>Court Case Number(S-XXXX for Supreme Court and H-XXXX for High Court)</b>:   
       <br>
-      <b>Type Of Court</b>: <input type="text" name="court_type">
-      <!-- <fieldset>
-        Is the case postponed? <a href="/html/case_postponed.html"><b>YES</b></a>
-      </fieldset> -->
+      <input type="text" name="court_case_no">
+      <br>
+      <b>Type Of Court</b>:
+      <br>
+
+      <input type="text" name="court_type">
+      
     <table style="border-spacing: 20px;">
       <td>
       <fieldset>
@@ -29,13 +31,7 @@
         </form>
       </fieldset>
     </td>
-    <!-- <td>
-      <fieldset>
-        <form action="" method="">
-          <button type="submit">Case Resolved</button>
-        </form>
-      </fieldset>
-    </td> -->
+    
     </table>
   </div>
 </div>

@@ -17,47 +17,59 @@
                 <br>
                 <label><%= fname %> <%= mname %> <%= lname %></label>
                 <br>
+                <br>
 
                 <label><b>Company Name: </b></label>
                 <br>
                 <label><%= company_name %></label>
+                <br>
                 <br>
 
                 <label><b>Preferred Case Type(s): </b></label>
                 <br>
                 <label><%= pref_case_types %></label>
                 <br>
+                <br>
 
                 <label><b>No. of years of experience: </b></label>
                 <br>
                 <label><%= exp_yrs %></label>
+                <br>
                 <br>
 
                 <label><b>Experience: </b></label>
                 <br>
                 <label><%= experience %></label>
                 <br>
+                <br>
 
                 <label><b>Fees: </b>Rs. <%= fees %></label>
+                <br>
                 <br>
 
                 <label><b>Fee structure: </b></label>
                 <br>
                 <label><%= fee_descp %></label>
                 <br>
+                <br>
 
                 <label><b>Date Of Birth: </b><%= dob %></label>
+                <br>
                 <br>
 
                 <label><b>Age: </b><%= age %> yrs</label>
                 <br>
+                <br>
 
                 <label><b>e-mail: </b></label>
                 <br>
+    
                 <label><%= email %></label>
+                <br>
                 <br>
 
                 <label><b>Phone Number: </b>(+91)(0)<%= ph_no %></label>
+                <br>
                 <br>
 
                 <!-- <button type="submit" class="button">Back</button> -->
@@ -65,7 +77,7 @@
         </form>
 
         <form action="/chat/get_chat/<%=  %>" method="GET">
-            <button type="submit">Open Chat</button>
+            <button class="btn" type="submit">Open Chat</button>
         </form>
     </body>
 </html>
